@@ -12,10 +12,12 @@
 @min-xl: 1201px;
 
 @min-xxl: 1920px;
+
 :root {
 	--transition-duration: 250ms;
 	--transition-function: ease-in-out;
 }
+
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
@@ -1366,7 +1368,8 @@ h1 {
 
 img {
 	border-style: none;
-	vertical-align: middle
+	vertical-align: middle;
+	max-width: 100%;
 }
 
 svg:not(:root) {
@@ -3943,14 +3946,25 @@ button span {
 	border-radius: 16px;
 	transition: background-color var(--transition-duration) var(--transition-function), color var(--transition-duration) var(--transition-function);
 }
+
 .big-button:hover {
-    color: #ffffff;
-    background-color: #E546F3;
+	color: #ffffff;
+	background-color: #E546F3;
 }
+
 @media (min-width: 990px) {
 	.big-button {
 		padding: 33px 55px;
 		font-size: 20px;
 		line-height: 24px;
 	}
+}
+
+.article__body > img {
+	margin-bottom: 2em;
+}
+
+.main__picture {
+	margin-bottom: 1em;
+	display: block;
 }
