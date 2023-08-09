@@ -3936,7 +3936,8 @@ button span {
 }
 
 .order-block {
-	padding: 0 20px;
+	position: relative;
+	padding: 20px;
 	display: grid;
 	align-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -3944,6 +3945,26 @@ button span {
 	margin-bottom: 2em;
 	justify-items: center;
 	gap: 16px;
+	border: 1px dashed #c1c1c1;
+}
+
+.order-block::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+	mask-image: url(../img/scissors.svg);
+	-webkit-mask-image: url(../img/scissors.svg);
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+	mask-position: center;
+	-webkit-mask-position: center;
+	mask-size: contain;
+	-webkit-mask-size: contain;
+	left: 20px;
+	background-color: #797979;
 }
 
 .order-block__content {
@@ -3954,5 +3975,55 @@ button span {
 
 	& .big-button {
 		margin-top: 1em;
+	}
+}
+
+.checklist {
+	display: grid;
+	margin-bottom: 1em;
+}
+
+
+.checklist-inner {
+	margin-top: 16px;
+	padding: 8px 16px 24px;
+	background-color: #87c8ab;
+	color: #000000;
+
+	& h2 {
+		margin-top: 1em;
+	}
+}
+
+@media (min-width: 990px) {
+	.checklist-inner {
+		padding: 24px 54px 40px;
+	}
+}
+
+.checklist-inner::before {
+	content: '';
+	display: block;
+	width: 160px;
+	height: 16px;
+	margin-top: -24px;
+	margin-left: -16px;
+	background-color: #87c8ab;
+	-webkit-mask-image: url(../img/checklist-before.svg);
+	mask-image: url(../img/checklist-before.svg);
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: left bottom;
+	mask-position: left bottom;
+}
+
+@media (min-width: 990px) {
+	.checklist-inner::before {
+		width: 240px;
+		height: 24px;
+		margin-top: -48px;
+		margin-left: -54px;
 	}
 }
