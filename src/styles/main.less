@@ -3937,24 +3937,26 @@ button span {
 
 .order-block {
 	position: relative;
-	padding: 20px;
 	display: grid;
 	align-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	max-width: 668px;
 	margin-bottom: 2em;
+	padding: 20px;
+	border: 1px dashed #c1c1c1;
 	justify-items: center;
 	gap: 16px;
-	border: 1px dashed #c1c1c1;
 }
 
 .order-block::before {
 	content: '';
 	position: absolute;
 	top: 0;
-	transform: translateY(-50%);
+	left: 20px;
 	width: 20px;
 	height: 20px;
+	background-color: #797979;
+	transform: translateY(-50%);
 	mask-image: url(../img/scissors.svg);
 	-webkit-mask-image: url(../img/scissors.svg);
 	mask-repeat: no-repeat;
@@ -3963,8 +3965,6 @@ button span {
 	-webkit-mask-position: center;
 	mask-size: contain;
 	-webkit-mask-size: contain;
-	left: 20px;
-	background-color: #797979;
 }
 
 .order-block__content {
@@ -3987,8 +3987,8 @@ button span {
 .checklist-inner {
 	margin-top: 16px;
 	padding: 8px 16px 24px;
-	background-color: #87c8ab;
 	color: #000000;
+	background-color: #87c8ab;
 
 	& h2 {
 		margin-top: 1em;
@@ -4026,4 +4026,25 @@ button span {
 		margin-top: -48px;
 		margin-left: -54px;
 	}
+}
+
+.order-img {
+	position: relative;
+	display: block;
+}
+
+.order-img span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-weight: 700;
+	color: #fff;
+	font-style: italic;
+	background-color: tomato;
+	padding: 10px;
+	border-radius: 50%;
+	aspect-ratio: 1/1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
