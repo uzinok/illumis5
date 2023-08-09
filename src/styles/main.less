@@ -332,7 +332,7 @@ html {
 	}
 }
 
-.breadcrumb a {
+.breadcrumb span {
 	color: #be1f4b;
 }
 
@@ -2307,7 +2307,7 @@ html {
 	color: inherit;
 }
 
-.nmg .nmg-header__secondary > ul.nmg-header__nav > li a {
+.nmg .nmg-header__secondary > ul.nmg-header__nav > li span {
 	display: flex;
 	align-items: center;
 	height: 100%;
@@ -2334,7 +2334,7 @@ html {
 		border-bottom: 1px solid #e5e5db;
 	}
 
-	.nmg .nmg-header__secondary > ul.nmg-header__nav > li a {
+	.nmg .nmg-header__secondary > ul.nmg-header__nav > li span {
 		display: flex;
 		flex-grow: 1;
 		padding: .5rem 1rem;
@@ -2644,11 +2644,6 @@ button span {
 	list-style: none;
 }
 
-.nmg a,
-.nmg button {
-	cursor: pointer;
-}
-
 .nmg h2 {
 	margin-top: 0;
 }
@@ -2706,19 +2701,15 @@ button span {
 	text-decoration: none;
 }
 
-.nmg .nmg-btn:not(:disabled):not(.disabled) {
-	cursor: pointer;
-}
-
 .nmg .nmg-btn-g {
 	color: #000 !important;
 	background-color: #f7bf3c !important;
 	border-color: #f7bf3c !important;
 }
 
-.nmg .nmg-btn-g:active,
-.nmg .nmg-btn-g:focus,
-.nmg .nmg-btn-g:hover {
+.nmg a.nmg-btn-g:active,
+.nmg a.nmg-btn-g:focus,
+.nmg a.nmg-btn-g:hover {
 	color: #000 !important;
 	background-color: #dd9e09 !important;
 	border-color: #dd9e09 !important;
@@ -2974,7 +2965,6 @@ button span {
 .nmg .nmg-header__menu-btn {
 	width: 40px;
 	height: 40px;
-	cursor: pointer;
 }
 
 .nmg .nmg-header__menu-btn span {
@@ -3006,7 +2996,7 @@ button span {
 	color: inherit;
 }
 
-.nmg .nmg-header__secondary > ul.nmg-header__nav > li a {
+.nmg .nmg-header__secondary > ul.nmg-header__nav > li span {
 	display: flex;
 	align-items: center;
 	height: 100%;
@@ -3052,7 +3042,6 @@ button span {
 		border-bottom: 1px solid #e5e5db;
 	}
 
-	.nmg .nmg-header__secondary > ul.nmg-header__nav > li a,
 	.nmg .nmg-header__secondary > ul.nmg-header__nav > li span {
 		display: flex;
 		flex-grow: 1;
@@ -3105,12 +3094,7 @@ button span {
 		white-space: nowrap;
 	}
 
-	.nmg .nmg-header__secondary > ul > li:focus,
-	.nmg .nmg-header__secondary > ul > li:hover {
-		background-color: #e5e5db;
-	}
-
-	.nmg .nmg-header__secondary > ul > li > a {
+	.nmg .nmg-header__secondary > ul > li > span {
 		padding: 0 1rem;
 		text-transform: uppercase;
 	}
@@ -3202,11 +3186,6 @@ button span {
 
 .nmg img {
 	max-width: 100%;
-}
-
-.nmg a,
-.nmg button {
-	cursor: pointer;
 }
 
 .nmg h3,
@@ -3348,14 +3327,9 @@ button span {
 	user-select: none;
 }
 
-.nmg .nmg-btn,
-.nmg .nmg-btn:hover {
+.nmg .nmg-btn {
 	color: #797979;
 	text-decoration: none;
-}
-
-.nmg .nmg-btn:not(:disabled):not(.disabled) {
-	cursor: pointer;
 }
 
 .nmg .nmg-btn-a {
